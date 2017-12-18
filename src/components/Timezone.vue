@@ -170,7 +170,7 @@ export default {
       const b = 0.114 * color[2];
       const a = 1 - ((r + g + b) / 255);
 
-      return (a < 0.5) ? 'black' : 'white';
+      return (a < 0.4) ? 'black' : 'white';
     },
     deleteTimezone() {
       this.$emit('delete-timezone', { index: this.index });
